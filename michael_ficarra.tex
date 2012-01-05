@@ -11,79 +11,102 @@
 
 \thispagestyle{empty}
 
+\newcommand{\middot}[2]{#1 \textbf{\textperiodcentered} #2}
+\newcommand{\sectiontitle}[1]{{\large \textsc{\textbf{#1}}}}
+\newcommand{\subsectiontitle}[1]{{\textsc{\textbf{#1}}}}
+\newcommand{\gutterwidth}[0]{3.3cm}
+\newcommand{\extralinespacing}[0]{0.15cm}
+
 \begin{document}
 
 \begin{center}
-	{\huge \textbf{\textsc{Michael Ficarra}}}
-	\\ ~ \\
-	Email: github\_resume@michael.ficarra.me \\
-	Address: (REDACTED) \textperiodcentered ~Phone: (REDACTED)
+  \sectiontitle{Michael Ficarra}
+  \\ ~ \\
+  Email: github\_resume@michael.ficarra.me \\
+  \middot{Address: (REDACTED)}{Phone: (REDACTED)}
+  \\ ~
 \end{center}
 
-\begin{tabular}{@{}p{2.5cm}p{14cm}@{}}
-	{\large \textsc{\textbf {Objective}}}   &   Full-time position in the software design/engineering field \\
-	\\
-	{\large \textsc{\textbf{Education}}}    &   Worcester Polytechnic Institute, Worcester, MA \\
-	{}                                      &   Bachelor of Science in Computer Science \\
-	{}                                      &   Degree completed October 2010, awarded February 2011 \\
-	\\
+\begin{tabular}{@{}p{\gutterwidth}p{13cm}@{}}
+  {\large \textsc{\textbf {Objective}}}  &  Full-time position in the software architecture and engineering field
+  \\ \\
 \end{tabular}
 
-\begin{tabular}{@{}p{2.5cm}p{7cm}p{7cm}@{}}
-	{}   &   \multicolumn{2}{l}{ \textbf{Related Coursework} } \\
-	{}   &   Software Engineering                 &   Database Systems \\
-	{}   &   Operating Systems                    &   Computer Architecture \\
-	{}   &   Discrete Mathematics                 &   Algorithms \\
-	{}   &   Object-Oriented Design Concepts      &   Software Security Engineering \\
-	{}   &   Object-Oriented Analysis \& Design   &   {}   \\
-	{}   &   \multicolumn{2}{l}{ Machine Organization \& Assembly Lanugage } \\
-	{}   &   \multicolumn{2}{l}{ Techniques of Programming Language Translation } \\
-	{}   &   \multicolumn{2}{l}{ WebWare: Computational Technology for Network Information Systems } \\
-	\\
+\begin{tabular}{@{}p{\gutterwidth}p{13cm}@{}}
+  \sectiontitle{Education}
+      &  Worcester Polytechnic Institute, Worcester, MA \\[\extralinespacing]
+  {}  &  Master of Science in Computer Science, expected May 2012 \\
+  {}  &  \quad {\em Thesis:} Compiling Cryptographic Protocols to a Declarative Target \\[\extralinespacing]
+  {}  &  Bachelor of Science in Computer Science, awarded February 2011 \\
+  {}  &  \quad {\em Major Qualifying Project:} Generating Universal Models for Geometric Theories \\
+  \\
+  {}  &  \subsectiontitle{Influential Coursework} \\
+  {}  &  \middot{Software Security Engineering}{\middot{Protocol Analysis}{\middot{Database Systems}{Algorithms}}} \\
+  {}  &  \middot{Techniques of Programming Language Translation}{Discrete Mathematics} \\
+  {}  &  \middot{Object-Oriented Analysis \& Design}{\middot{Operating Systems}{Software Engineering}} \\
+  %{}  &  Logic in Computer Science \\
+  \\
 \end{tabular}
 
-\begin{tabular}{@{}p{2.5cm}p{14cm}@{}}
-	{}   &   \textbf{Related Project} \\
-	{}   &   {\em Major Qualifying Project \hfill August to October 2010} \\
-	{}   &   Currently doing experimental research and analysis on an algorithm known as The Chase. More information upon request. \\
-	\\
+\begin{tabular}{@{}p{\gutterwidth}p{13cm}@{}}
+  \sectiontitle{Experience}
+      &  {\em Google Caja Intern, Google Summer of Code 2010 \hfill May to August 2010} \\
+  {}  &  Caja is a Google project, the goal of which is to transform untrusted JavaScript into JavaScript that can be
+  safely run in a trusted environment. Determined why popular JS libraries would not compile and proposed fixes to both
+  the Caja and library developers.
+  \\ \\
+  {}  &  {\em Web Application Developer, Solstice Technologies \hfill January 2008 to August 2010} \\
+  {}  &  Worked on and managed projects that require the use of a server-side scripting language, most commonly PHP, and
+  a database such as MySQL. Projects are taken from basic concept to finished product through collaboration and teamwork
+  with fellow employees.
+  \\ \\
+  {}  &  {\em Intern, Skarven Enterprises, Berkeley Heights, NJ \hfill May to August 2009} \\
+  {}  &  Designed and implemented a custom, domain-specific programming language to be used by people with little prior
+  knowledge of programming languages so they could create integration tests for the company's main product. The compiler
+  and interpreter for the custom language were written entirely in Ruby and on a Linux OS.
+  \\ \\
 \end{tabular}
 
-\begin{tabular}{@{}p{2.5cm}p{2.5cm}p{11.5cm}@{}}
-	\multicolumn{2}{}{\large \textsc{\textbf{Technical Skills}}}   &   {}
-	\\
-	\textsc{Languages}   &   {\em Expert}      &   JavaScript, Ruby, CoffeeScript, PHP, XHTML, CSS, SQL
-	\\[1.5mm]       {}   &   {\em Proficient}  &   Haskell, C, C++, Java, shell scripting, rexical/racc, alex/happy
-	\\[1.5mm]       {}   &   {\em Capable}     &   PASCAL, Perl, Scheme, lex/yacc, C\#
-	\\[1.5mm]       {}   &   {\em Interested}  &   Boo, Groovy, Python, Erlang, SmallTalk, Go, F\#
-	\\ \\
-	\textsc{Operating Systems}   &   \multicolumn{2}{p{13cm}}{Fedora, Windows, RHEL, Ubuntu, almost any Linux distribution} \\[8mm]
-	\textsc{Applications}        &   \multicolumn{2}{p{13cm}}{vim, most Unix utilities, Apache HTTP Server, Notepad++, Max/MSP, Adobe Photoshop, Microsoft Office} \\
-	\\
+\begin{tabular}{@{}p{\gutterwidth}p{1.5cm}p{11.5cm}@{}}
+  \multirow{2}{\gutterwidth}{\sectiontitle{Technical Skills}}
+      &  {\em Expert}      &  JavaScript, CoffeeScript \\[\extralinespacing]
+  {}  &  {\em Proficient}  &  Haskell, Ruby, C, PHP, SQL, HTML, CSS, BASH \\[\extralinespacing]
+  {}  &  {\em Capable}     &  Scala, C++, Java, C\# \\[\extralinespacing]
+  {}  &  {\em Interested}  &  Self, Smalltalk, Erlang, Perl, Python, Go, F\#, Scheme, Boo, Groovy \\
+  \\
 \end{tabular}
 
-\begin{tabular}{@{}p{2.5cm}p{14cm}@{}}
-	\large \textsc{\textbf{Experience}}
-	     &   {\em Google Caja Intern, Google Summer of Code 2010 \hfill May to August 2010} \\
-	{}   &   Caja is a Google project, the goal of which is to transform
-	untrusted JavaScript into JavaScript that can be safely run in a
-	trusted environment. Determined why popular JS libraries would not
-	compile and proposed fixes to both the Caja and library developers.
-	\\ \\
-	{}   &   {\em Web Application Developer, Solstice Technologies \hfill January 2008 to August 2010} \\
-	{}   &   Worked on and managed projects that require the use of a
-	server-side scripting language, most commonly PHP, and a database such
-	as MySQL. Projects are taken from basic concept to finished product
-	through collaboration and teamwork with fellow employees.
-	\\ \\
-	{}   &   {\em Intern, Skarven Enterprises, Berkeley Heights, NJ \hfill May to August 2009} \\
-	{}   &   Designed and implemented a custom programming language to be
-	used by people with little prior knowledge of programming languages to
-	create integration tests for the company's main product. The compiler
-	and interpreter for the custom language were written entirely in Ruby
-	and on a Linux OS.
-	\\ \\
-	\large \textsc{\textbf{Personal}}   &   Github: \url {http://github.com/michaelficarra}
+\begin{tabular}{@{}p{\gutterwidth}p{13cm}@{}}
+  \sectiontitle{Achievements}
+     & Major CoffeeScript language developer and active maintainer of its official compiler \\[\extralinespacing]
+  {} & Technical editor for the Pragmatic Programmers' CoffeeScript book \\[\extralinespacing]
+  {} & Contributor to at least 35 open source projects, mostly libraries or developer tools \\[\extralinespacing]
+  {} & Contributor to other JavaScript-related compilers including js2coffee and UglifyJS \\
+  \\
 \end{tabular}
+
+\begin{tabular}{@{}p{\gutterwidth}p{13cm}@{}}
+  \sectiontitle{Interests}
+      &  Programming language design and compilers \\[\extralinespacing]
+  {}  &  Software security, applied logic, and protocol analysis \\[\extralinespacing]
+  {}  &  JavaScript, particularly its application outside a browser environment \\[\extralinespacing]
+  {}  &  The event-driven paradigm seen in languages like JavaScript and Self \\[\extralinespacing]
+  {}  &  The actor model of concurrent computation, as seen in Scala, Io, and Erlang \\[\extralinespacing]
+  {}  &  The efficient workflow achieved through test-driven development \\
+  \\
+\end{tabular}
+
+\begin{tabular}{@{}p{\gutterwidth}p{1.5cm}p{11.5cm}@{}}
+  \sectiontitle{Portfolio}  &  {\em Github}  &  \url{http://github.com/michaelficarra} \\
+  \\
+\end{tabular}
+
+%\begin{tabular}{@{}p{\gutterwidth}p{13cm}@{}}
+%  \sectiontitle{License}
+%      &  This r\'{e}sum\'{e} is licensed under a 3-clause BSD license. The source is available at
+%      \url{http://github.com/michaelficarra/resume} \\
+%  \\
+%\end{tabular}
+
 
 \end{document}
