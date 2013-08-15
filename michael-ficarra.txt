@@ -39,7 +39,7 @@ Experience
     commonly PHP, and a relational database such as MySQL. Projects were taken from concept to
     completion through collaboration and teamwork with fellow employees.
 
-  Intern, Skarven Enterprises, Berkeley Heights, NJ                           May to August, 2009
+  Intern, Skarven Enterprises                                                 May to August, 2009
     Designed and implemented a custom, domain-speciﬁc programming language to be used by people with
     little prior knowledge of programming languages so they could create integration tests for the
     company's main product. The compiler and interpreter for the custom language were written in
