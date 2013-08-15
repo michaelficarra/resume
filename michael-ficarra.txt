@@ -60,7 +60,9 @@ Achievements
   - Contributor to at least 60 open source projects, mostly JavaScript and CoffeeScript static
     analysis and transformation tools
 
-Education :: Worcester Polytechnic Institute, Worcester, MA
+Education
+
+  Worcester Polytechnic Institute, Worcester, MA
 
   Bachelor of Science in Computer Science, awarded February 2011
     Major Qualifying Project: Generating Universal Models for Geometric Theories
