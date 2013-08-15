@@ -1,0 +1,112 @@
+\documentclass{report}
+\usepackage{url}
+\usepackage{simplemargins}
+\usepackage{multirow}
+\usepackage[T1]{fontenc}
+\usepackage[usenames,dvipsnames]{xcolor}
+
+\setleftmargin{0.4in}
+\setrightmargin{0.6in}
+\settopmargin{0.4in}
+\setbottommargin{0.2in}
+
+\thispagestyle{empty}
+
+\newcommand{\middot}[2]{#1 \textbf{\textperiodcentered} #2}
+\newcommand{\sectiontitle}[1]{{\textsc{\textbf{#1}}}}
+\newcommand{\subsectiontitle}[1]{{\textsc{\textbf{#1}}}}
+\newcommand{\gutterwidth}[0]{3.0cm}
+\newcommand{\extralinespacing}[0]{0.15cm}
+
+\begin{document}
+
+\begin{center}
+  \sectiontitle{\Large Michael Ficarra} \\[\extralinespacing]
+  Email: github.resume@michael.ficarra.me \\
+  \middot{Address: (REDACTED)}{Phone: (REDACTED)} \\[\extralinespacing]
+\end{center}
+
+\begin{tabular}{@{}p{\gutterwidth}p{2cm}p{12cm}@{}}
+  \sectiontitle{Portfolio}  &  {\em Github}        &  \url{https://github.com/michaelficarra} \\
+                            &  {\em Speaker Deck}  &  \url{https://speakerdeck.com/michaelficarra} \\
+  \\
+\end{tabular}
+
+\begin{tabular}{@{}p{\gutterwidth}p{14cm}@{}}
+  \sectiontitle{Interests}
+      &  \middot{programming language design}{\middot{compilers}{\middot{program transformations}{protocol analysis}}} \\
+  {}  &  \middot{software security}{\middot{provable security}{\middot{logic programming}{ECMAScript interpreters}}} \\
+  {}  &  \middot{ECMAScript static analysis tools}{SpiderMonkey AST format} \\
+  \\
+\end{tabular}
+
+\begin{tabular}{@{}p{\gutterwidth}p{14cm}@{}}
+  \sectiontitle{Experience}
+      &  {\em Application Security Engineer, Groupon \hfill since September 2012} \\
+  {}  &  Augmented various development teams to keep a security eye on their design and implementation. Built a variety
+  of tools and services to help prevent many kinds of fraud and abuse. Redesigned and led implementation of core
+  authentication mechanism as dedicated service.
+  \\~\\
+      &  {\em CoffeeScript Fellow, Groupon \hfill June to September, 2012} \\
+  {}  &  Designed and built an alternative CoffeeScript compiler with an improved compilation strategy, a declarative
+  specification, and standardised interfaces. Contributed to other FOSS projects that were used as dependencies,
+  including adding source map support to the most popular JavaScript code generator.
+  \\~\\
+      &  {\em Google Caja Intern, Google Summer of Code 2010 \hfill May to August, 2010} \\
+  {}  &  Caja is a Google project whose goal is to allow rich web aplications to safely embed untrusted third-party
+  HTML, CSS, and JavaScript. Caja allows communication between modules through exchanges of references to JS
+  objects, relying on an object-capability model for security. Determined why the behaviour of popular JS libraries
+  was not being preserved, and proposed fixes to both the Caja and library developers.
+  \\~\\
+  {}  &  {\em Web Application Developer, Solstice Technologies \hfill January 2008 to August 2010} \\
+  {}  &  Worked on and managed projects that required the use of server-side scripting languages, most commonly PHP, and
+  a relational database such as MySQL\@. Projects were taken from concept to completion through collaboration and teamwork
+  with fellow employees.
+  \\~\\
+  {}  &  {\em Intern, Skarven Enterprises, Berkeley Heights, NJ \hfill May to August, 2009} \\
+  {}  &  Designed and implemented a custom, domain-specific programming language to be used by people with little prior
+  knowledge of programming languages so they could create integration tests for the company's main product. The compiler
+  and interpreter for the custom language were written in Ruby.
+  \\~\\
+\end{tabular}
+
+\begin{tabular}{@{}p{\gutterwidth}p{14cm}@{}}
+  \sectiontitle{Speaking}
+      &  SpiderMonkey Parser API: A Standard For Structured JS Representations \\[\extralinespacing]
+  {}  &  An Analysis of the Redesign of the CoffeeScript Compiler \\[\extralinespacing]
+  {}  &  Select Ways to Harness the Power of JavaScript (based largely on Effective JavaScript) \\[\extralinespacing]
+%  {}  &  Redesigning the CoffeeScript Compiler \\[\extralinespacing]
+  {}  &  Introducing ``CoffeeScript II: The Wrath of Khan'' \\
+  \\
+\end{tabular}
+
+\begin{tabular}{@{}p{\gutterwidth}p{14cm}@{}}
+  \sectiontitle{Achievements}
+      &  Maintainer of CoffeeScript language and active contributor to both major compilers \\[\extralinespacing]
+  {}  &  Technical editor for the Pragmatic Programmers' CoffeeScript book \\[\extralinespacing]
+  {}  &  Contributor to at least 60 open source projects, mostly JavaScript and CoffeeScript static analysis and transformation tools \\
+  \\
+\end{tabular}
+
+\begin{tabular}{@{}p{\gutterwidth}p{14cm}@{}}
+  \sectiontitle{Education}
+      &  Worcester Polytechnic Institute, Worcester, MA \\[\extralinespacing]
+%  {}  &  Master of Science in Computer Science, incomplete \\
+%  {}  &  \quad {\em Thesis:}\ Compiling Cryptographic Protocols to a Declarative Target \\[\extralinespacing]
+  {}  &  Bachelor of Science in Computer Science, awarded February 2011 \\
+  {}  &  \quad {\em Major Qualifying Project:}\ Generating Universal Models for Geometric Theories \\
+  \\
+  {}  &  \subsectiontitle{Influential Coursework} \\
+  {}  &  \middot{Software Security Engineering}{\middot{Protocol Analysis}{\middot{Database Systems}{Algorithms}}} \\
+  {}  &  \middot{Techniques of Programming Language Translation}{\middot{Discrete Maths}{Operating Systems}}
+  \\
+\end{tabular}
+
+\vfill
+
+\begin{center} {\color{gray} \footnotesize
+  This r\'{e}sum\'{e} is licensed under a 3-clause BSD license. The source is available at \url{https://github.com/michaelficarra/resume}
+} \end{center}
+
+
+\end{document}

@@ -1,4 +1,4 @@
-resume_name = "michael_ficarra"
+resume_name = "michael-ficarra"
 task :default => [:pdf,:open]
 
 task :pdf do |task,args|
@@ -11,5 +11,5 @@ task :clean do |task,args|
 end
 
 task :open do |task,args|
-	sh "xdg-open #{resume_name}.pdf"
+	sh "open #{resume_name}.pdf"
 end
